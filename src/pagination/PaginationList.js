@@ -124,15 +124,15 @@ class PaginationList extends Component {
       <div className='row' style={ { marginTop: 15 } }>
         {
           content ||
-          <span>
+          [
             <div className='col-md-6 col-xs-6 col-sm-6 col-lg-6'>
               { total }{ sizePerPageList.length > 1 ? dropdown : null }
-            </div>
+            </div>,
             <div style={ { display: hidePageList } }
               className='col-md-6 col-xs-6 col-sm-6 col-lg-6'>
               { pageBtns }
             </div>
-          </span>
+          ]
         }
       </div>
     );
